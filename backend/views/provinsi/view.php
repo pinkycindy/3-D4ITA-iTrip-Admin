@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Provinsi */
 
-$this->title = $model->idProvinsi;
+$this->title = $model->namaProvinsi;
 $this->params['breadcrumbs'][] = ['label' => 'Provinsis', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'idProvinsi',
             'namaProvinsi',
-            'idPulau',
+            'pulau.namaPulau',
         ],
     ]) ?>
 

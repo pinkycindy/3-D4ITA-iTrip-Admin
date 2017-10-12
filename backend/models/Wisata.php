@@ -3,6 +3,7 @@
 namespace backend\models;
 
 use Yii;
+use backend\models\Provinsi;
 
 /**
  * This is the model class for table "wisata".
@@ -32,6 +33,11 @@ class Wisata extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+
+      public function getProvinsi(){
+            return $this->hasOne(Provinsi::className(),['idProvinsi' => 'idProvinsi']);
+
+    }
     public function rules()
     {
         return [

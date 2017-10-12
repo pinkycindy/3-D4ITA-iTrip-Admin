@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $model backend\models\Pulau */
 
 $this->title = 'Create Pulau';
-$this->params['breadcrumbs'][] = ['label' => 'Pulaus', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Pulau', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="pulau-create">

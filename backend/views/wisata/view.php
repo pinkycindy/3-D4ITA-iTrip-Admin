@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Wisata */
 
-$this->title = $model->idWisata;
+$this->title = $model->namaWisata;
 $this->params['breadcrumbs'][] = ['label' => 'Wisatas', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'idWisata',
-            'idProvinsi',
+            'provinsi.namaProvinsi',
             'namaWisata',
             'deskripsiWisata:ntext',
             'kategori',

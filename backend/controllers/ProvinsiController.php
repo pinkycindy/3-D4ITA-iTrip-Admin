@@ -5,6 +5,8 @@ namespace backend\controllers;
 use Yii;
 use backend\models\Provinsi;
 use backend\models\ProvinsiSearch;
+use backend\models\Pulau;
+use backend\models\PulauSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -17,6 +19,9 @@ class ProvinsiController extends Controller
     /**
      * @inheritdoc
      */
+
+
+   
     public function behaviors()
     {
         return [
@@ -33,6 +38,8 @@ class ProvinsiController extends Controller
      * Lists all Provinsi models.
      * @return mixed
      */
+
+
     public function actionIndex()
     {
         $searchModel = new ProvinsiSearch();

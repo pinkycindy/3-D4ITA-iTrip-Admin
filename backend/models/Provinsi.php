@@ -3,6 +3,7 @@
 namespace backend\models;
 
 use Yii;
+use backend\models\Pulau;
 
 /**
  * This is the model class for table "provinsi".
@@ -25,6 +26,7 @@ class Provinsi extends \yii\db\ActiveRecord
         return 'provinsi';
     }
 
+
     /**
      * @inheritdoc
      */
@@ -38,17 +40,26 @@ class Provinsi extends \yii\db\ActiveRecord
         ];
     }
 
+  
     /**
      * @inheritdoc
      */
+
+
+    public function getPulau(){
+            return $this->hasOne(Pulau::className(),['idPulau' => 'idPulau']);
+
+    }
     public function attributeLabels()
     {
         return [
             'idProvinsi' => 'Id Provinsi',
             'namaProvinsi' => 'Nama Provinsi',
-            'idPulau' => 'Id Pulau',
+            'idPulau' => 'Pulau',
         ];
     }
+
+
 
     /**
      * @return \yii\db\ActiveQuery
@@ -63,7 +74,7 @@ class Provinsi extends \yii\db\ActiveRecord
      */
     public function getIdPulau0()
     {
-        return $this->hasOne(Pulau::className(), ['idPulau' => 'idPulau']);
+        return $this->hasOne(Pulau::className(), ['idPulau' => '']);
     }
 
     /**

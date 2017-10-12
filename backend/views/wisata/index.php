@@ -25,12 +25,12 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'idWisata',
-            'idProvinsi',
+            'provinsi.namaProvinsi',
             'namaWisata',
-            'deskripsiWisata:ntext',
+            //'deskripsiWisata:ntext',
             'kategori',
-            // 'biayaMasuk',
-            // 'lokasiWisata:ntext',
+            'biayaMasuk',
+            'lokasiWisata:ntext',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

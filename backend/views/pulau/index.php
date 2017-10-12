@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\PulauSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Pulaus';
+$this->title = 'Pulau';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="pulau-index">
@@ -24,8 +24,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'idPulau',
             'namaPulau',
+            'idPulau',
+            
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

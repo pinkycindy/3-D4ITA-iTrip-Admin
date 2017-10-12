@@ -28,18 +28,19 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
+        'brandLabel' => 'i-Trip',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
-    $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-    ];
+   
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
+         $menuItems = [
+        ['label' => 'Home', 'url' => ['/site/index']],
+    ];
         $menuItems[] = ['label' => 'Pulau', 'url' => ['/pulau']];
          $menuItems[] = ['label' => 'Provinsi', 'url' => ['/provinsi']];
           $menuItems[] = ['label' => 'Wisata', 'url' => ['/wisata']];

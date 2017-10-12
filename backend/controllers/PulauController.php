@@ -66,7 +66,7 @@ class PulauController extends Controller
         $model = new Pulau();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->idPulau]);
+            return $this->redirect(['index']);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -85,7 +85,7 @@ class PulauController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->idPulau]);
+            return $this->redirect(['index']);
         } else {
             return $this->render('update', [
                 'model' => $model,

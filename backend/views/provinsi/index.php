@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\ProvinsiSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Provinsis';
+$this->title = 'Provinsi';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="provinsi-index">
@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'idProvinsi',
             'namaProvinsi',
-            'idPulau',
+            'pulau.namaPulau',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
