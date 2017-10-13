@@ -5,9 +5,9 @@
 
  $idPulau = 0;
 
- if($selectedPulau == "idJawa"){
+ if($selectedPulau == "idSumatera"){
    $idPulau = 1;
- }else if($selectedPulau == "idSumatera"){
+ }else if($selectedPulau == "idJawa"){
    $idPulau = 2;
  }else if($selectedPulau == "idKalimantan"){
    $idPulau = 3;
